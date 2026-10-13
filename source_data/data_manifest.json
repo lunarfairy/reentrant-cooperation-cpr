@@ -1,0 +1,787 @@
+[
+  {
+    "file": "Figure1/config.json",
+    "bytes": 7576,
+    "sha256": "44dbe9b04563aadfa67a1118f0c6d6cc6df1625291eb48ced2e07201cfbea388"
+  },
+  {
+    "file": "Figure1/figure1_six_0C.csv",
+    "bytes": 162009,
+    "sha256": "2617a2216ecbffae28074832ce024af687a3f214a91eee88ce17231910ea14a3",
+    "columns": [
+      "time",
+      "ode_Ru",
+      "ode_xu",
+      "ode_Rd",
+      "ode_xd",
+      "abm_mean_Ru",
+      "abm_mean_xu",
+      "abm_mean_Rd",
+      "abm_mean_xd"
+    ],
+    "rows": 1001
+  },
+  {
+    "file": "Figure1/figure1_six_0C.npz",
+    "bytes": 910581,
+    "sha256": "35b3e9271623ecee1c7444d7ed7fdfa939f544d04eb61147d0db70ddd8f3b2ba",
+    "arrays": {
+      "time": {
+        "shape": [
+          1001
+        ],
+        "dtype": "float64"
+      },
+      "ode": {
+        "shape": [
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "abm_runs": {
+        "shape": [
+          50,
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "abm_mean": {
+        "shape": [
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "run_seeds": {
+        "shape": [
+          50
+        ],
+        "dtype": "uint32"
+      }
+    }
+  },
+  {
+    "file": "Figure1/figure1_six_0M.csv",
+    "bytes": 162077,
+    "sha256": "a3bc16e12d4ccd157b1e167141bbd9566a279e75f26435f7848772aa8da3c2b0",
+    "columns": [
+      "time",
+      "ode_Ru",
+      "ode_xu",
+      "ode_Rd",
+      "ode_xd",
+      "abm_mean_Ru",
+      "abm_mean_xu",
+      "abm_mean_Rd",
+      "abm_mean_xd"
+    ],
+    "rows": 1001
+  },
+  {
+    "file": "Figure1/figure1_six_0M.npz",
+    "bytes": 960547,
+    "sha256": "a8483c5bf8c0068bc2be1421d508e823a4e246b128d75e4cd5663a251dde3317",
+    "arrays": {
+      "time": {
+        "shape": [
+          1001
+        ],
+        "dtype": "float64"
+      },
+      "ode": {
+        "shape": [
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "abm_runs": {
+        "shape": [
+          50,
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "abm_mean": {
+        "shape": [
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "run_seeds": {
+        "shape": [
+          50
+        ],
+        "dtype": "uint32"
+      }
+    }
+  },
+  {
+    "file": "Figure1/figure1_six_CC.csv",
+    "bytes": 157197,
+    "sha256": "3e4ee9f198ae23448440724f1028ad471742fbf8c27f1c82f0bfb91b685f9b6d",
+    "columns": [
+      "time",
+      "ode_Ru",
+      "ode_xu",
+      "ode_Rd",
+      "ode_xd",
+      "abm_mean_Ru",
+      "abm_mean_xu",
+      "abm_mean_Rd",
+      "abm_mean_xd"
+    ],
+    "rows": 1001
+  },
+  {
+    "file": "Figure1/figure1_six_CC.npz",
+    "bytes": 827645,
+    "sha256": "d8609dd96fccd997b99ab1a95dbdf7cde5c6a7b4dcbebae119a455dc5e89a71c",
+    "arrays": {
+      "time": {
+        "shape": [
+          1001
+        ],
+        "dtype": "float64"
+      },
+      "ode": {
+        "shape": [
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "abm_runs": {
+        "shape": [
+          50,
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "abm_mean": {
+        "shape": [
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "run_seeds": {
+        "shape": [
+          50
+        ],
+        "dtype": "uint32"
+      }
+    }
+  },
+  {
+    "file": "Figure1/figure1_six_CM.csv",
+    "bytes": 157706,
+    "sha256": "31127bd3a69134caa304e707e26690d41442f52291557982bb3f1b747aabcfba",
+    "columns": [
+      "time",
+      "ode_Ru",
+      "ode_xu",
+      "ode_Rd",
+      "ode_xd",
+      "abm_mean_Ru",
+      "abm_mean_xu",
+      "abm_mean_Rd",
+      "abm_mean_xd"
+    ],
+    "rows": 1001
+  },
+  {
+    "file": "Figure1/figure1_six_CM.npz",
+    "bytes": 864877,
+    "sha256": "984666a00ed9922d12c9743ec3e60065784828671692a7d01e8a70d0f54a98a0",
+    "arrays": {
+      "time": {
+        "shape": [
+          1001
+        ],
+        "dtype": "float64"
+      },
+      "ode": {
+        "shape": [
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "abm_runs": {
+        "shape": [
+          50,
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "abm_mean": {
+        "shape": [
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "run_seeds": {
+        "shape": [
+          50
+        ],
+        "dtype": "uint32"
+      }
+    }
+  },
+  {
+    "file": "Figure1/figure1_six_MC.csv",
+    "bytes": 156988,
+    "sha256": "f830383b17e04442728532c75e2f253b7ba43c4bc1ae57e1adb50bdce92eb318",
+    "columns": [
+      "time",
+      "ode_Ru",
+      "ode_xu",
+      "ode_Rd",
+      "ode_xd",
+      "abm_mean_Ru",
+      "abm_mean_xu",
+      "abm_mean_Rd",
+      "abm_mean_xd"
+    ],
+    "rows": 1001
+  },
+  {
+    "file": "Figure1/figure1_six_MC.npz",
+    "bytes": 880680,
+    "sha256": "e757569404fde9da1c6d2d185acc64a4f541551a7b9766066349cfeb994d8263",
+    "arrays": {
+      "time": {
+        "shape": [
+          1001
+        ],
+        "dtype": "float64"
+      },
+      "ode": {
+        "shape": [
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "abm_runs": {
+        "shape": [
+          50,
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "abm_mean": {
+        "shape": [
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "run_seeds": {
+        "shape": [
+          50
+        ],
+        "dtype": "uint32"
+      }
+    }
+  },
+  {
+    "file": "Figure1/figure1_six_MM.csv",
+    "bytes": 158220,
+    "sha256": "61cfc2bb0854f8de98a3873d5400f702891b196bc3f6e6e6cf9e78f92b51f5f1",
+    "columns": [
+      "time",
+      "ode_Ru",
+      "ode_xu",
+      "ode_Rd",
+      "ode_xd",
+      "abm_mean_Ru",
+      "abm_mean_xu",
+      "abm_mean_Rd",
+      "abm_mean_xd"
+    ],
+    "rows": 1001
+  },
+  {
+    "file": "Figure1/figure1_six_MM.npz",
+    "bytes": 864080,
+    "sha256": "943d42a535719bfd5d13f39af4d9046266eca1706ca9b76d31fbd309a7244a60",
+    "arrays": {
+      "time": {
+        "shape": [
+          1001
+        ],
+        "dtype": "float64"
+      },
+      "ode": {
+        "shape": [
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "abm_runs": {
+        "shape": [
+          50,
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "abm_mean": {
+        "shape": [
+          1001,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "run_seeds": {
+        "shape": [
+          50
+        ],
+        "dtype": "uint32"
+      }
+    }
+  },
+  {
+    "file": "Figure2/config.json",
+    "bytes": 3198,
+    "sha256": "333c4958f4df68acdea3f9f005ff4e2b2f55a12168ffaebe955d1847fc191a5e"
+  },
+  {
+    "file": "Figure2/endpoints_0C.csv",
+    "bytes": 8163,
+    "sha256": "913a021f51df7c8794ca2b0ba0ff4b4b67e94bc2f4753b740cae78ec1c5e3ec5",
+    "columns": [
+      "initial_id",
+      "Ru0",
+      "xu0",
+      "Rd0",
+      "xd0",
+      "Ru_t100",
+      "xu_t100",
+      "Rd_t100",
+      "xd_t100"
+    ],
+    "rows": 50
+  },
+  {
+    "file": "Figure2/endpoints_0M.csv",
+    "bytes": 8144,
+    "sha256": "e0045e00faf6d8d46b4a2623a8e538b1088e7c8cc182bb93ee1232ee2b5ea36f",
+    "columns": [
+      "initial_id",
+      "Ru0",
+      "xu0",
+      "Rd0",
+      "xd0",
+      "Ru_t100",
+      "xu_t100",
+      "Rd_t100",
+      "xd_t100"
+    ],
+    "rows": 50
+  },
+  {
+    "file": "Figure2/endpoints_CC.csv",
+    "bytes": 8058,
+    "sha256": "24008b06433440626f8a688528fbc4e7dbe1519d9b6f55390156775fcda186bc",
+    "columns": [
+      "initial_id",
+      "Ru0",
+      "xu0",
+      "Rd0",
+      "xd0",
+      "Ru_t100",
+      "xu_t100",
+      "Rd_t100",
+      "xd_t100"
+    ],
+    "rows": 50
+  },
+  {
+    "file": "Figure2/endpoints_CM.csv",
+    "bytes": 8035,
+    "sha256": "31550d15216ed2dd2e3d6194af83aeadb8b6e7a3bf4950750abb87299b86d567",
+    "columns": [
+      "initial_id",
+      "Ru0",
+      "xu0",
+      "Rd0",
+      "xd0",
+      "Ru_t100",
+      "xu_t100",
+      "Rd_t100",
+      "xd_t100"
+    ],
+    "rows": 50
+  },
+  {
+    "file": "Figure2/endpoints_MC.csv",
+    "bytes": 8012,
+    "sha256": "61e60703752d1e59e94ec15349e2f31e37d0e9fe4fd5c2b9b040154c0534356b",
+    "columns": [
+      "initial_id",
+      "Ru0",
+      "xu0",
+      "Rd0",
+      "xd0",
+      "Ru_t100",
+      "xu_t100",
+      "Rd_t100",
+      "xd_t100"
+    ],
+    "rows": 50
+  },
+  {
+    "file": "Figure2/endpoints_MM.csv",
+    "bytes": 8023,
+    "sha256": "0ef96bf70a195eaba7d44678e9e276061c1fdc0ceae20cde6d9454c37716b36c",
+    "columns": [
+      "initial_id",
+      "Ru0",
+      "xu0",
+      "Rd0",
+      "xd0",
+      "Ru_t100",
+      "xu_t100",
+      "Rd_t100",
+      "xd_t100"
+    ],
+    "rows": 50
+  },
+  {
+    "file": "Figure2/initial_conditions.csv",
+    "bytes": 4064,
+    "sha256": "fbd7999325e920c432fb7758e89a0d63a2f1a03a68267d51d2c6ade27841ce6b",
+    "columns": [
+      "Ru",
+      "xu",
+      "Rd",
+      "xd"
+    ],
+    "rows": 50
+  },
+  {
+    "file": "Figure2/summary_t100.csv",
+    "bytes": 222,
+    "sha256": "40eca42dcd278edc1dc4edf4ba9c45c2f84d4ef4914c071dbaaf268166297c5a",
+    "columns": [
+      "parameter_set",
+      "n_initial",
+      "upstream_near_zero_t100",
+      "downstream_near_zero_t100",
+      "both_near_zero_t100",
+      "neither_near_zero_t100"
+    ],
+    "rows": 6
+  },
+  {
+    "file": "Figure2/trajectories_0C.npz",
+    "bytes": 1323450,
+    "sha256": "bc05b4c811e3b4f94c0c53d1aa5943b2f2bcfd79b5aedc9333f1df5bd32e991b",
+    "arrays": {
+      "time": {
+        "shape": [
+          1001
+        ],
+        "dtype": "float64"
+      },
+      "initial": {
+        "shape": [
+          50,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "trajectories": {
+        "shape": [
+          1001,
+          50,
+          4
+        ],
+        "dtype": "float64"
+      }
+    }
+  },
+  {
+    "file": "Figure2/trajectories_0M.npz",
+    "bytes": 1246651,
+    "sha256": "d148ee0efc08ab6c93b25026901bbc506b098e353345b9831f8c51395d5e7bad",
+    "arrays": {
+      "time": {
+        "shape": [
+          1001
+        ],
+        "dtype": "float64"
+      },
+      "initial": {
+        "shape": [
+          50,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "trajectories": {
+        "shape": [
+          1001,
+          50,
+          4
+        ],
+        "dtype": "float64"
+      }
+    }
+  },
+  {
+    "file": "Figure2/trajectories_CC.npz",
+    "bytes": 1419158,
+    "sha256": "5c70384427b146ad97ebb53f773bb50ff3d73a4aea48da5628766a522a31062f",
+    "arrays": {
+      "time": {
+        "shape": [
+          1001
+        ],
+        "dtype": "float64"
+      },
+      "initial": {
+        "shape": [
+          50,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "trajectories": {
+        "shape": [
+          1001,
+          50,
+          4
+        ],
+        "dtype": "float64"
+      }
+    }
+  },
+  {
+    "file": "Figure2/trajectories_CM.npz",
+    "bytes": 1423399,
+    "sha256": "050e406cc85c68eee5e154bea60dfdbfdbfecf44e169e4dce4de67146f9267b6",
+    "arrays": {
+      "time": {
+        "shape": [
+          1001
+        ],
+        "dtype": "float64"
+      },
+      "initial": {
+        "shape": [
+          50,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "trajectories": {
+        "shape": [
+          1001,
+          50,
+          4
+        ],
+        "dtype": "float64"
+      }
+    }
+  },
+  {
+    "file": "Figure2/trajectories_MC.npz",
+    "bytes": 1389346,
+    "sha256": "ef42db40131e0367da6ffa868075269a7bca93231b9f5598bb3bc87f5e58452c",
+    "arrays": {
+      "time": {
+        "shape": [
+          1001
+        ],
+        "dtype": "float64"
+      },
+      "initial": {
+        "shape": [
+          50,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "trajectories": {
+        "shape": [
+          1001,
+          50,
+          4
+        ],
+        "dtype": "float64"
+      }
+    }
+  },
+  {
+    "file": "Figure2/trajectories_MM.npz",
+    "bytes": 1430911,
+    "sha256": "85b0a4ed2e7df28a879f40e13df168186ed848d61d0b06f6b10156e742c17eb0",
+    "arrays": {
+      "time": {
+        "shape": [
+          1001
+        ],
+        "dtype": "float64"
+      },
+      "initial": {
+        "shape": [
+          50,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "trajectories": {
+        "shape": [
+          1001,
+          50,
+          4
+        ],
+        "dtype": "float64"
+      }
+    }
+  },
+  {
+    "file": "Figure3/config.json",
+    "bytes": 1684,
+    "sha256": "813b3e8293283ac7552c83623f2b77e2dafc1156f6245840749d4c6b6eb6abaf"
+  },
+  {
+    "file": "Figure3/upstream_equilibrium_branches.csv",
+    "bytes": 64856,
+    "sha256": "1157d1c994c5d954904cc6b2ff9b536b93876aab0893cea7c7d1f441396d4b43",
+    "columns": [
+      "k",
+      "scenario",
+      "upstream_state",
+      "Ru_star",
+      "xu_selected",
+      "collapse_manifold",
+      "critical_boundary"
+    ],
+    "rows": 2001
+  },
+  {
+    "file": "Figure4/config.json",
+    "bytes": 946,
+    "sha256": "1c5c6ab8acc839f5cb656134c6bbd336fb44dfe82ee0d0eb7838373dd673b820"
+  },
+  {
+    "file": "Figure4/source_data.npz",
+    "bytes": 2931627,
+    "sha256": "f92ff2c6045416e6226f922e138ac217e4da73fe46cdba2de74bb8148684d8dd",
+    "arrays": {
+      "I_k": {
+        "shape": [
+          501
+        ],
+        "dtype": "float64"
+      },
+      "I_e_c_d": {
+        "shape": [
+          451
+        ],
+        "dtype": "float64"
+      },
+      "I_R_d": {
+        "shape": [
+          451,
+          501
+        ],
+        "dtype": "float64"
+      },
+      "I_x_d": {
+        "shape": [
+          451,
+          501
+        ],
+        "dtype": "float64"
+      },
+      "I_state": {
+        "shape": [
+          451,
+          501
+        ],
+        "dtype": "<U1"
+      },
+      "II_k": {
+        "shape": [
+          501
+        ],
+        "dtype": "float64"
+      },
+      "II_e_c_d": {
+        "shape": [
+          451
+        ],
+        "dtype": "float64"
+      },
+      "II_R_d": {
+        "shape": [
+          451,
+          501
+        ],
+        "dtype": "float64"
+      },
+      "II_x_d": {
+        "shape": [
+          451,
+          501
+        ],
+        "dtype": "float64"
+      },
+      "II_state": {
+        "shape": [
+          451,
+          501
+        ],
+        "dtype": "<U1"
+      },
+      "III_k": {
+        "shape": [
+          501
+        ],
+        "dtype": "float64"
+      },
+      "III_e_c_d": {
+        "shape": [
+          451
+        ],
+        "dtype": "float64"
+      },
+      "III_R_d": {
+        "shape": [
+          451,
+          501
+        ],
+        "dtype": "float64"
+      },
+      "III_x_d": {
+        "shape": [
+          451,
+          501
+        ],
+        "dtype": "float64"
+      },
+      "III_state": {
+        "shape": [
+          451,
+          501
+        ],
+        "dtype": "<U1"
+      }
+    }
+  }
+]

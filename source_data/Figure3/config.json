@@ -1,0 +1,75 @@
+{
+  "fixed_parameters": {
+    "e_C_u": 0.3,
+    "e_D_u": 1.5
+  },
+  "thresholds": {
+    "theta_u": 0.2,
+    "k_1": 0.7
+  },
+  "display_range": {
+    "k": [
+      0,
+      1
+    ],
+    "R_u": [
+      0,
+      1
+    ],
+    "x_u": [
+      0,
+      1.05
+    ]
+  },
+  "colors": {
+    "resource": "#173F67",
+    "cooperation": "#A84F63",
+    "critical": "#666A70",
+    "scenario_fills": [
+      "#EEF5F6",
+      "#FBF5E9",
+      "#F0F1F2"
+    ],
+    "collapse_manifold": "#D9DDE0",
+    "collapse_manifold_edge": "#A3A8AC",
+    "collapse_manifold_hatch": "////"
+  },
+  "collapse_semantics": {
+    "R_u_star": 0.0,
+    "x_u_selected": "NaN",
+    "manifold": "0 <= x_u_infinity <= 1",
+    "csv_x_u_selected_missing": ""
+  },
+  "branch_scope": "scenario-defining stable positive-resource branch; not a global basin diagram",
+  "critical_boundary_semantics": {
+    "csv_column": "critical_boundary",
+    "definition": "k == theta_u or k == k_1",
+    "classification": "non-hyperbolic critical boundary; not an ordinary stable point"
+  },
+  "downstream_driver": {
+    "threshold_scaled": "g_s(k) = 2 k R_u^*(k)",
+    "raw_ode_input": "k R_u^*(k) = g_s(k) / 2"
+  },
+  "scenario_state_mapping": {
+    "Scenario I": "U_M",
+    "Scenario II": "U_C",
+    "Scenario III": "U_0"
+  },
+  "final_figure": {
+    "canvas_mm": [
+      180,
+      105
+    ],
+    "layout_fraction": {
+      "left": 0.12,
+      "right": 0.985,
+      "bottom": 0.14,
+      "top": 0.9,
+      "hspace": 0.3
+    },
+    "output": {
+      "directory": "qa/figure3_upstream_equilibrium_branches",
+      "stem": "Figure3_upstream_equilibrium_branches"
+    }
+  }
+}

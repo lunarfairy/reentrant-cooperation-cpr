@@ -1,0 +1,142 @@
+{
+  "initial_distribution": "independent Uniform(0, 1) in Ru,xu,Rd,xd",
+  "shared_initial_conditions_across_panels": true,
+  "n_initial": 50,
+  "root_seed": 82702,
+  "time_end": 100.0,
+  "integration_dt": 0.02,
+  "sample_dt": 0.1,
+  "integrator": "RK4 in resource/logit-strategy coordinates",
+  "finite_time_resource_threshold": 0.0001,
+  "near_zero_definition": "R(t=100)<1e-4; not an asymptotic-state classification",
+  "cases": [
+    {
+      "label": "MC",
+      "regime": "I",
+      "a": 1.0,
+      "f": 0.05,
+      "e_c": 0.3,
+      "e_d": 1.5,
+      "e_c_d": 0.6,
+      "e_d_d": null,
+      "k": 0.05
+    },
+    {
+      "label": "CC",
+      "regime": "II",
+      "a": 1.0,
+      "f": 0.25,
+      "e_c": 0.3,
+      "e_d": 1.5,
+      "e_c_d": 0.8,
+      "e_d_d": null,
+      "k": 0.25
+    },
+    {
+      "label": "0C",
+      "regime": "III",
+      "a": 1.0,
+      "f": 0.8,
+      "e_c": 0.3,
+      "e_d": 1.5,
+      "e_c_d": 0.6,
+      "e_d_d": null,
+      "k": 0.8
+    },
+    {
+      "label": "MM",
+      "regime": "I",
+      "a": 1.0,
+      "f": 0.15,
+      "e_c": 0.3,
+      "e_d": 1.5,
+      "e_c_d": 0.6,
+      "e_d_d": null,
+      "k": 0.15
+    },
+    {
+      "label": "CM",
+      "regime": "II",
+      "a": 1.0,
+      "f": 0.25,
+      "e_c": 0.3,
+      "e_d": 1.5,
+      "e_c_d": 0.6,
+      "e_d_d": null,
+      "k": 0.25
+    },
+    {
+      "label": "0M",
+      "regime": "III",
+      "a": 1.0,
+      "f": 0.8,
+      "e_c": 0.3,
+      "e_d": 1.5,
+      "e_c_d": 0.2,
+      "e_d_d": null,
+      "k": 0.8
+    }
+  ],
+  "counts": [
+    {
+      "parameter_set": "MC",
+      "n_initial": 50,
+      "upstream_near_zero_t100": 15,
+      "downstream_near_zero_t100": 6,
+      "both_near_zero_t100": 6,
+      "neither_near_zero_t100": 35
+    },
+    {
+      "parameter_set": "CC",
+      "n_initial": 50,
+      "upstream_near_zero_t100": 21,
+      "downstream_near_zero_t100": 13,
+      "both_near_zero_t100": 13,
+      "neither_near_zero_t100": 29
+    },
+    {
+      "parameter_set": "0C",
+      "n_initial": 50,
+      "upstream_near_zero_t100": 50,
+      "downstream_near_zero_t100": 14,
+      "both_near_zero_t100": 14,
+      "neither_near_zero_t100": 0
+    },
+    {
+      "parameter_set": "MM",
+      "n_initial": 50,
+      "upstream_near_zero_t100": 18,
+      "downstream_near_zero_t100": 6,
+      "both_near_zero_t100": 6,
+      "neither_near_zero_t100": 32
+    },
+    {
+      "parameter_set": "CM",
+      "n_initial": 50,
+      "upstream_near_zero_t100": 21,
+      "downstream_near_zero_t100": 8,
+      "both_near_zero_t100": 8,
+      "neither_near_zero_t100": 29
+    },
+    {
+      "parameter_set": "0M",
+      "n_initial": 50,
+      "upstream_near_zero_t100": 50,
+      "downstream_near_zero_t100": 9,
+      "both_near_zero_t100": 9,
+      "neither_near_zero_t100": 0
+    }
+  ],
+  "observed_initial_minima": [
+    0.003023898333041286,
+    0.00761627363464934,
+    0.0021709820743950337,
+    0.004501814980932939
+  ],
+  "observed_initial_maxima": [
+    0.9810377368235013,
+    0.9998274720518859,
+    0.9659953009834799,
+    0.9764433005305335
+  ]
+}

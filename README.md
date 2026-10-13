@@ -2,7 +2,7 @@
 
 Computational implementation for **Re-entrant Cooperation under Directional Resource Transfer in Coupled Common-Pool Resource Systems**.
 
-This repository contains the coupled upstream-downstream model, deterministic integration, stochastic agent-based simulation, and analytical equilibrium calculations. It is a minimal computation package: no manuscript, plotting scripts, precomputed results, or external input data are included.
+This repository contains the coupled upstream-downstream model, deterministic integration, stochastic agent-based simulation, and analytical equilibrium calculations. The `source_data/` directory provides the numerical data underlying Figures 1–4, including saved simulation trajectories and analytical equilibrium arrays. The computational implementation runs without external input data.
 
 ## Installation
 
@@ -41,6 +41,10 @@ Figure 1 runs 300 stochastic simulations and can take substantial time. Its runn
 | Figure 2 | Six cases sharing 50 independently sampled Uniform(0,1) four-dimensional initial states; t = 100; logit RK4 step 0.02; sampling interval 0.1 | Initial states, trajectories, endpoints and finite-time near-depletion counts |
 | Figure 3 | Upstream extraction rates 0.3 and 1.5; 2,001 k values from 0 to 1 | Selected upstream branch arrays |
 | Figure 4 | Three coupling regimes; downstream cooperative extraction from 0.4 to 0.85; 451 × 501 cells per regime | Conditional downstream equilibrium grids and boundary flags |
+
+## Source data
+
+The [source data guide](source_data/README_Source_Data.txt) maps files to Figures 1–4. The [manifest](source_data/data_manifest.json) records SHA-256 checksums, CSV columns and array shapes for 32 original data/configuration files. These files are preserved byte-for-byte from the existing figure source data. Download the repository ZIP to obtain both code and data.
 
 ## Model and parameters
 
@@ -83,7 +87,7 @@ Release validation covers syntax and imports, existing quick model/ABM checks, s
 
 ## Citation and contact
 
-Please cite the associated manuscript by Tianyu Shi, Junhao Lu, hanqin qian and Chengyi Tu, using its title above. This repository does not assign a publication DOI. For questions about the implementation, open a GitHub issue. When reporting results, record the repository commit and software versions.
+Please cite the associated manuscript by Tianyu Shi, Junhao Lu, Hanqin Qian and Chengyi Tu, using its title above. This repository does not assign a publication DOI. For questions about the implementation, open a GitHub issue. When reporting results, record the repository commit and software versions.
 
 ## License
 

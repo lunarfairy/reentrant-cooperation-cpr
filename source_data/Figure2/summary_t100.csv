@@ -1,0 +1,7 @@
+parameter_set,n_initial,upstream_near_zero_t100,downstream_near_zero_t100,both_near_zero_t100,neither_near_zero_t100
+MC,50,15,6,6,35
+CC,50,21,13,13,29
+0C,50,50,14,14,0
+MM,50,18,6,6,32
+CM,50,21,8,8,29
+0M,50,50,9,9,0

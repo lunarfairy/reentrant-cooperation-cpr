@@ -1,0 +1,52 @@
+{
+  "color_anchors": [
+    "#FFFFFF",
+    "#173F67"
+  ],
+  "row_annotation_colors": [
+    "#272B30",
+    "#FFFFFF"
+  ],
+  "color_limits": [
+    0,
+    1
+  ],
+  "normalization": "linear",
+  "resource_contours": [
+    0.3,
+    0.4
+  ],
+  "cooperation_contours": [
+    0.8,
+    0.9,
+    0.97
+  ],
+  "resource_contour_equation": "e_Cd=1-R+g/(2R)",
+  "cooperation_contour_equation": "e_Cd=e_Dd-(e_Dd-0.5-g)/x",
+  "boundary_equation": "e_Cd=0.5+g",
+  "fixed_parameters": {
+    "e_Cu": 0.3,
+    "e_Du": 1.5,
+    "e_Dd": 1.5
+  },
+  "display_domain": {
+    "I": [
+      0.0,
+      0.2
+    ],
+    "II": [
+      0.2,
+      0.7
+    ],
+    "III": [
+      0.7,
+      1.0
+    ]
+  },
+  "e_Cd_domain": [
+    0.4,
+    0.85
+  ],
+  "scope": "positive-resource analytical branch map conditional on upstream branch",
+  "verification": "contour residuals <1e-12; shared norm/cmap; equal panel size; labels in bounds"
+}
