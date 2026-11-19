@@ -16,6 +16,8 @@ from cpr_updown.cases import figure1_six_cases, _ode_trajectory
 from cpr_updown.initial_conditions import generate_shared_initial_conditions
 from cpr_updown.numerics import integrate_logit_rk4
 from cpr_updown import upstream, equilibrium_grid
+from cpr_updown.spatial_abm import run_spatial_comparison
+from cpr_updown.phase_diagram import run_phase_diagram
 
 
 def figure1(out: Path, smoke: bool) -> dict:
@@ -89,7 +91,7 @@ def equilibria(out: Path, smoke: bool) -> dict:
 
 def main() -> None:
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--experiment',choices=['all','figure1','figure2','equilibria'],default='all')
+    parser.add_argument('--experiment',choices=['all','figure1','figure2','equilibria','spatial','phase_diagram'],default='all')
     parser.add_argument('--profile',choices=['smoke','manuscript'],default='smoke',
                         help='smoke is a short execution check; manuscript uses the original experiment settings')
     parser.add_argument('--output',type=Path,default=Path('outputs'))
@@ -99,7 +101,13 @@ def main() -> None:
                   versions=dict(numpy=np.__version__,scipy=scipy.__version__,networkx=nx.__version__),
                   cases=[dict(label=c.label,parameters=asdict(c.parameters)) for c in figure1_six_cases()],
                   experiments={})
-    for name,function in [('figure1',figure1),('figure2',figure2),('equilibria',equilibria)]:
+    for name,function in [
+        ('figure1',figure1),
+        ('figure2',figure2),
+        ('equilibria',equilibria),
+        ('spatial',run_spatial_comparison),
+        ('phase_diagram',run_phase_diagram),
+    ]:
         if args.experiment in ('all',name):
             out=args.output/name
             out.mkdir(exist_ok=True)

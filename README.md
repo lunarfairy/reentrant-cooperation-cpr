@@ -31,6 +31,8 @@ The original manuscript settings are selected explicitly:
 python run.py --profile manuscript --experiment figure1 --output outputs/figure1
 python run.py --profile manuscript --experiment figure2 --output outputs/figure2
 python run.py --profile manuscript --experiment equilibria --output outputs/equilibria
+python run.py --profile manuscript --experiment spatial --output outputs/spatial
+python run.py --profile manuscript --experiment phase_diagram --output outputs/phase_diagram
 ```
 
 Figure 1 runs 300 stochastic simulations and can take substantial time. Its runner is serial; the original local batch used parallel execution with the same independent run seeds. The output root contains experiment subdirectories and `run_metadata.json`. Use separate output directories for different runs.
@@ -41,6 +43,8 @@ Figure 1 runs 300 stochastic simulations and can take substantial time. Its runn
 | Figure 2 | Six cases sharing 50 independently sampled Uniform(0,1) four-dimensional initial states; t = 100; logit RK4 step 0.02; sampling interval 0.1 | Initial states, trajectories, endpoints and finite-time near-depletion counts |
 | Figure 3 | Upstream extraction rates 0.3 and 1.5; 2,001 k values from 0 to 1 | Selected upstream branch arrays |
 | Figure 4 | Three coupling regimes; downstream cooperative extraction from 0.4 to 0.85; 451 × 501 cells per regime | Conditional downstream equilibrium grids and boundary flags |
+| Figure S1 | Well-mixed ODE, connected ER (⟨k⟩ = 6), and 2D periodic square lattice (20 × 25, z = 4) | Trajectories, active C–D interface densities, 50-IC depletion counts, coupling scans |
+| Figure S2 | Asymmetric (k, e_C,d) and symmetric (k, e_C) parameter planes; 400 × 400 grids | Phase classifications, ODE residuals, 4D Jacobian eigenvalue checks |
 
 ## Source data
 
@@ -79,6 +83,8 @@ The equilibrium maps describe selected locally stable positive-resource branches
 | `cpr_updown/upstream.py` | Upstream branch and depletion-manifold representation |
 | `cpr_updown/downstream.py` | Downstream branches and threshold crossings |
 | `cpr_updown/equilibrium_grid.py` | Conditional equilibrium grids |
+| `cpr_updown/spatial_abm.py` | 2D periodic lattice vs. ER and ODE comparison |
+| `cpr_updown/phase_diagram.py` | Full parameter-plane phase diagrams and 4D Jacobian checks |
 | `run.py` | Standalone computation and output entry point |
 
 The three core calculation modules were copied byte-for-byte from the research workspace. Computational definitions in the other modules were extracted unchanged from existing analysis scripts, with plotting imports and machine-specific paths omitted. `run.py` supplies packaging and output orchestration; model equations, formal experiment parameters and random-seed conventions were retained. No input files outside this repository are required.
